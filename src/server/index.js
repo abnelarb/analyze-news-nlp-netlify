@@ -8,7 +8,7 @@ var path = require('path')
 
 //Setup the api url and it's key and parameters
 const baseUrl = 'https://api.meaningcloud.com/sentiment-2.1'
-const API_KEY = process.env.API_KEY
+const API_KEY = 2177cf475d7808496c81ce1c84a3fe47
 
 const express = require('express')
 const mockAPIResponse = require('./mockAPI.js')
