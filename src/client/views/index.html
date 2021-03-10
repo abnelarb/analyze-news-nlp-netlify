@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Evaluate News with Natural Language Processing API</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Evaluate News with Natural Language Processing API</h1>
+        </header>
+
+        <main>
+            <p><b>Please enter your url for article or news to evaluate it's sentiment by meaningcloud API:</b></p>
+            <section>
+                <form class="form" onsubmit="return Client.handleSubmit(event)">
+                    <input id="url" type="text" name="input" value="" placeholder="input your Url here to analyze!">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <input id="submit" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+
+                </form>
+            </section>
+
+            <section id="results">
+               <p> <strong>Analyzing Results:</strong></p>
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Polarity</th>
+                            <th>Confidence</th>
+                            <th>Subjectivity</th>
+                            <th>Agreement</th>
+                            <th>Irony</th>
+                    </thead>
+                    <tbody>
+                        <tr class="active-row">
+                            <td id="polarity" ></td>
+                            <td id="confidence" ></td>
+                            <td id="subjectivity" ></td>
+                            <td id="agreement" ></td>
+                            <td id="irony" ></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+        </main>
+
+        <footer>
+            <p id="designed-By">Designed By : Mohammed Kamal For Udacity Advanced Track Project</p>
+        </footer>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+           </script>
+    </body>
+</html>

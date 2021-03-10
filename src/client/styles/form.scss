@@ -1,0 +1,22 @@
+.form {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 1000px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    flex: 1;
+    border: 1px solid #545454;
+    border-radius: 3px;
+  }
+  
+  input {
+    padding: 5px 20px;
+    width: 100%;
+    line-height: 16px;
+    margin: 10px 0;
+  }
