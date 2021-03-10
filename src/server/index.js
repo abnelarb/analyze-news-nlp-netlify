@@ -36,7 +36,7 @@ app.get('/', function (req, res) {
 app.post('/analyze', async (req , res) => {
 articleUrl = req.body.url;
 console.log("articleUrl" , articleUrl)
-const meaningcloudUrl = `${baseUrl}?key=${API_KEY}&lang=en&mode=general&url=${articleUrl}`;
+const meaningcloudUrl = `${baseUrl}?key=2177cf475d7808496c81ce1c84a3fe47&lang=en&mode=general&url=${articleUrl}`;
 console.log("meaningcloudapi" ,meaningcloudUrl)
 const response = await fetch(meaningcloudUrl);
 
